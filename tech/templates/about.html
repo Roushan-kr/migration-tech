@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}About - TECHCHARGER{% endblock %}
+
+{% block content %}
+  <section class="w-full py-12 px-4 sm:px-6 lg:px-8 "> 
+   <div class="mt-3.5 flex items-center justify-center bg-blue-50">
+     <div class="max-w-4xl mx-auto bg-gradient-to-br from-white via-blue-50 to-blue-100 border border-blue-200 rounded-2xl shadow-xl p-10">
+      
+      <h1 class="text-4xl font-extrabold text-blue-800 mb-6 tracking-tight">About TECHCHARGER</h1>
+      
+      <p class="text-lg text-gray-700 leading-relaxed mb-8">
+        TECHCHARGER is dedicated to empowering individuals and businesses with the latest advancements in technology. Our mission is to provide insightful resources, tutorials, and updates to help you stay ahead in the fast-evolving tech landscape.
+      </p>
+
+      <h2 class="text-2xl font-bold text-blue-700 mb-4">Our Vision</h2>
+      <p class="text-base text-gray-700 leading-relaxed mb-8">
+        We aim to bridge the gap between technology and its users by making complex topics accessible and actionable for everyone.
+      </p>
+
+      <h2 class="text-2xl font-bold text-blue-700 mb-4">What We Offer</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8">
+        <li>In-depth articles and guides on emerging technologies</li>
+        <li>Step-by-step tutorials for beginners and professionals</li>
+        <li>Industry news and analysis</li>
+        <li>Community support and collaboration</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-blue-700 mb-4">Contact Us</h2>
+      <p class="text-base text-gray-700 leading-relaxed">
+        Have questions or suggestions? Reach out via our 
+        <a href="{% url 'contact' %}" class="text-blue-600 hover:text-blue-800 hover:underline font-semibold transition-colors duration-150">contact page</a>.
+      </p>
+
+    </div>
+    </div>
+  </section>
+{% endblock %}

@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="{% static 'css/base.css' %}" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="{% static 'src/output.css' %}">
+
+  {% block extra_head %} {% endblock %}
 </head>
 
 <body>
@@ -27,9 +30,9 @@
         </div>
         <div class="middle-part">
           <a class="nav-item" href="/" >Home</a>
-          <a class="nav-item" href="/" >Services</a>
-          <a class="nav-item" href="/" >Contact Us</a>
-          <a class="nav-item" href="/" >About</a>
+          <a class="nav-item" href="/services/" >Services</a>
+          <a class="nav-item" href="/contact/" >Contact Us</a>
+          <a class="nav-item" href="/about/" >About</a>
         </div>
         <div class="right-part">
           <div class="search-container">
@@ -42,8 +45,10 @@
     </nav>
   </header>
 
-  <main>
+  <main class="min-h-screen flex flex-col justify-start items-stretch bg-white">
+    <div class="flex-grow">
     {% block content %}{% endblock %}
+    </div>
   </main>
 
   <footer>

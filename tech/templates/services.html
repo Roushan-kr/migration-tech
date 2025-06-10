@@ -1,0 +1,60 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Services - TECHCHARGER{% endblock %}
+{% load static %}
+{% block content %}
+  <div class="page-4-container">
+          <div class="why-choose-us">
+            <h1 class="title-animate">WHY <br />CHOOSE <span>US ?</span></h1>
+
+            <div class="content-wrapper">
+              <div class="text-section">
+                <p class="description">
+                  CodeAlpha leads in Ed-Tech, the country's quickest-growing pro
+                  training platform. We're all about shaping future tech
+                  creators. Our top internships and certifications show awesome
+                  results: Over 1,29,000+ students finished our internships. 95%
+                  of certified students boosted practical tech skills. Learning
+                  by doing: real projects, real skills. Flexibility for learning
+                  at your pace. Our strong alumni network offers support and job
+                  help. Partnerships with top tech firms add value. At
+                  CodeAlpha, we're building tech leaders and showing success in
+                  every story.
+                </p>
+
+                <div class="features-list">
+                  <div class="feature-item">
+                    <span class="check-icon">✓</span>
+                    Expert Trainers
+                  </div>
+                  <div class="feature-item">
+                    <span class="check-icon">✓</span>
+                    Online Remote Learning
+                  </div>
+                  <div class="feature-item">
+                    <span class="check-icon">✓</span>
+                    Lifetime Access
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-section">
+                <div class="dot-pattern"></div>
+                <div class="image-container">
+                    <img
+                    src="{% static 'images/logo.png' %}"
+                    alt="TechCharger Logo"
+                    />
+                </div>
+                <div class="stats-card">
+                  <div class="stats-icon">👥</div>
+                  <div class="stats-number">20K+</div>
+                  <div class="stats-text">Enrolled Learners</div>
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>
+{% endblock %}
+ 
