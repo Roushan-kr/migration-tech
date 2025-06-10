@@ -1,21 +1,133 @@
+{% load static %}
+<!-- templates/base.html -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Tech Help{% endblock %}</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}TECHCHARGER{% endblock %}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to Tech Help</h1>
-    </header>
-    <main>
-        {% block content %}
-        <p>This is the home page for tech help.</p>
-        {% endblock %}
-    </main>
-    <footer>
-        <p>&copy; 2023 Tech Help</p>
-    </footer>
+  <header>
+    <nav>
+      <div class="main-container">
+        <div class="left-part">
+          <img src="{% static 'img/logo.png' %}" alt="logo image" class="logo" />
+          <div class="logo-text">
+            <span class="logo-text-1">tech</span>
+            <span class="logo-text-2">charger</span>
+          </div>
+        </div>
+        <div class="middle-part">
+          <a class="nav-item" href="/" >Home</a>
+          <a class="nav-item" href="/" >Services</a>
+          <a class="nav-item" href="/" >Contact Us</a>
+          <a class="nav-item" href="/" >About</a>
+        </div>
+        <div class="right-part">
+          <div class="search-container">
+            <input type="search" name="Search bar" placeholder="Search" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <button class="sign-btn">Sign In</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <div class="page-5-container">
+      <div class="footer-content">
+        <!-- Company Section -->
+        <div class="footer-section">
+          <h3 class="footer-title">Company</h3>
+          <div class="underline"></div>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li>
+              <a href="#affiliate" class="footer-link">Affiliate Program</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Our Services Section -->
+        <div class="footer-section">
+          <h3 class="footer-title">Our Services</h3>
+          <div class="underline"></div>
+          <ul class="footer-links">
+            <li>
+              <a href="#roadmap" class="footer-link">Internship Roadmap</a>
+            </li>
+            <li>
+              <a href="#internship" class="footer-link">Internship Program</a>
+            </li>
+            <li>
+              <a href="#ambassador" class="footer-link">Ambassador Program</a>
+            </li>
+            <li><a href="#web" class="footer-link">Web Development</a></li>
+            <li><a href="#app" class="footer-link">App Development</a></li>
+            <li>
+              <a href="#courses" class="footer-link">Online Courses</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Link Section -->
+        <div class="footer-section">
+          <h3 class="footer-title">Quick Link</h3>
+          <div class="underline"></div>
+          <ul class="footer-links">
+            <li>
+              <a href="#privacy" class="footer-link">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#terms" class="footer-link">Term & Conditions</a>
+            </li>
+            <li><a href="#chat" class="footer-link">Live Chat</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Follow Us Section -->
+        <div class="footer-section">
+          <h3 class="footer-title">Follow Us</h3>
+          <div class="underline"></div>
+          <div class="social-links">
+            <a href="#linkedin" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#twitter" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#youtube" class="social-link" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#telegram" class="social-link" aria-label="Telegram">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="#whatsapp" class="social-link" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="{% static 'js/base.js' %}"></script>
 </body>
+
 </html>
